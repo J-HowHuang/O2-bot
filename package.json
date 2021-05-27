@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node discord.js"
+    "test": "node discord.js",
+    "start": "node discord.js"
   },
   "repository": {
     "type": "git",
