@@ -16,7 +16,7 @@ module.exports = {
         }
     },
     too_long: function(msg) {
-        if (msg.length > 250) {
+        if (msg.length > 100) {
             return true;
         }
     }
