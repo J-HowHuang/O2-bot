@@ -11,6 +11,6 @@ module.exports = {
         return msg.length > 100
     },
     threw_up: function(msg) {
-        return msg.include("我吐了")
+        return msg.includes("我吐了")
     }
 };
