@@ -9,10 +9,16 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     if(rules.zh_en_noSpace(msg)){
-        msg.reply('哥你中英文中間沒加空格，我吐了');
+        msg.channel.send('哥你中英文中間沒加空格，我吐了');
+        msg.react('🤮')
     }
     if(rules.zh_no_noSpace(msg)){
-        msg.reply('哥你中文跟數字中間沒加空格，我吐了');
+        msg.channel.send('哥你中文跟數字中間沒加空格，我吐了');
+        msg.react('🤮')
+    }
+    if(rules.too_long(msg)){
+        msg.channel.send('太長了我吐了')
+        msg.react('🤮')
     }
 });
 

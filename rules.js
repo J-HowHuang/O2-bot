@@ -15,4 +15,9 @@ module.exports = {
             return false;
         }
     },
+    too_long: function(msg) {
+        if (msg.length > 250) {
+            return true;
+        }
+    }
 };
