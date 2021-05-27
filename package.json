@@ -1,0 +1,23 @@
+{
+  "name": "o2-man",
+  "version": "1.0.0",
+  "description": "I totally threw up",
+  "main": "discord.js",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node discord.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-HowHuang/O2-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-HowHuang/O2-bot/issues"
+  },
+  "homepage": "https://github.com/J-HowHuang/O2-bot#readme"
+}
