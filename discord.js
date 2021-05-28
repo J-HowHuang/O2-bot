@@ -14,8 +14,8 @@ client.on('message', msg => {
         var rule = rules[rule_name]
         if (rule.violate(msg.content)){
             rule.spew(msg)
+            return;
         }
-        return;
     }
 });
 
