@@ -10,8 +10,8 @@ client.on('message', msg => {
     if (msg.author == client.user) {
         return;
     }
-
-    for (var rule in rules) {
+    for (var rule_name in rules) {
+        var rule = rules[rule_name]
         if (rule.violate(msg.content)){
             rule.spew(msg)
         }
