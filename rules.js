@@ -38,4 +38,25 @@ module.exports = {
             return
         }
     },
+    equal_equal: {
+        violate: function(content) {
+            re = /[\u4E00-\u9FFF]/
+            return content.includes('==')
+        },
+        spew: function(msg) {
+            msg.reply('等於等於不加空格 我吐了')
+            msg.react('🤮')
+            return
+        }
+    },
+    dont_cry: {
+        violate: function(content) {
+            return content.includes("哭了") || content.includes("想哭")
+        },
+        spew: function(msg) {
+            msg.reply('沒事ㄉ 不要難過了')
+            msg.react('❤️')
+            return
+        }
+    }
 };
